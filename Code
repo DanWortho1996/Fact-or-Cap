@@ -1,0 +1,362 @@
+#all imports:
+import sys,time
+import sys
+from datetime import date
+from datetime import datetime
+
+# main functions:
+# scores of player
+
+# all variables:
+name = input
+karma = 0
+answer = input
+
+answer = "A, Yes, Yeah, Ye, Y, Yeeee, Yea"
+answer = "B, Nahh, No, Never, Nor Mate, Na, Nope"
+
+def lose_karma():
+    global karma
+    karma -= 5
+
+def gain_karma():
+    global karma
+    karma += 5
+
+def endgame():
+    endgame 
+
+# printing text one by one letter
+def print_slow(txt):
+        for letter in txt:
+                sys.stdout.write(letter)
+                sys.stdout.flush()
+                time.sleep(0.05)
+
+#  current date
+today = date.today()
+current_date = today.strftime("%B %d, %Y")
+#  current time
+now = datetime.now()
+current_time = now.strftime("%H:%M:%S")
+
+answer = "a, b, A, B".upper
+answer = "a, A, b, B".lower
+
+#Intro
+print_slow("\nWelcome to 10Q. Please be ready to answer any questions we may have for you.\n")
+
+print("\nPlease Enter Your Name Below")
+
+name = input("Enter Your Preferred Name: ")
+
+print_slow(f"\nWelcome {name}, we're gathered here today on {current_date} at {current_time} because you was\nselected for a challengeable and testing game. \n")
+
+#Outro
+print_slow("\nLet's start with our First Question of the day...\n")
+
+#Q1
+print_slow("\nHow much Water do youu need to drink per day (roughly)? \n")
+
+answer = input("\nInput Answer: ")
+#OutroQ&A
+print("We Will Score it at The End To See if You Live or Die :)...\n")
+print("")
+
+#Q2
+print_slow("British people love their TEA, How often do the Brits drink TEA per day, guess the amount of mugs\nbetween 1 - 10?")
+print("\n")
+answer = input("A. 1 - 5 B. 6 - 10: ")
+if answer == "a":
+    lose_karma()
+    print("")
+    print_slow("Ahhhh, unlucky kidda.")
+    print("\n")
+    print_slow("It is B, CORRECT! Everyone slowly moving to coffee. The true hardcore Brits stick with the original\ncuppa's. They got their Tea from Spain back in the 1800's.")
+elif answer == "b":
+    gain_karma()
+    print("")
+    print_slow("It is B, CORRECT! Everyone slowly moving to coffee. The true hardcore Brits stick with the original\ncuppa's. They got their Tea from Spain back in the 1800's.")
+    print("\n")
+else:
+    print("Please only use a or b...")
+print("")
+
+#Q3
+print_slow("\nIn WWII the Brits was outnumbered in the air for the Battle of Britain, Who won the fight in the Air? \n")
+
+answer = input("A. Britain or B. Germany: ")
+print("")
+if answer == "a":
+    gain_karma()
+    print_slow("It was A. Britain, they was outnumbered 3/1. This meant that for each british plane they had to take down 3 German planes just to even break even, an they did. They won in the air with less planes\ncompared to the amount Germany had.")
+    print("\n")
+elif answer == "b":
+    lose_karma()
+    print_slow("This was wrong, don't forget we tally your score...")
+    print("\n")
+    print_slow("It was A. Britain, they was outnumbered 3/1. This meant that for each british plane they had to take down 3 German planes just to even break even, an they did. They won in the air with less planes\ncompared to the amount Germany had.")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+print("")
+
+#Q4
+print_slow("\nIn World War I, Which was the First Plane to take off in Germany?")
+print("\n")
+answer = input("A. Spitfire 50B40 or B. Buffalo's A.K.A Buffer Plane: ")
+print("")
+if answer == "a":
+    lose_karma()
+    print_slow("Close... you was one letter off in the Alphabet, that must be annoying.")
+    print("\n")
+    print_slow("The Buffalo it was, also known as The Buffer Plane for being light and having 4 wings, this is the\nplane that lost the war against Britain in The Battle of Britain for being a slower plane in\ncomparison to the British Air Force.")
+elif answer == "b":
+    gain_karma()
+    print_slow("The Buffalo it was, also known as The Buffer Plane for being light and having 4 wings, this is the\nplane that lost the war against Britain in The Battle of Britain for being a slower plane in\ncomparison to the British Air Force.")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+print("\n")
+
+#Q5
+print_slow("In 1917 they was Two men sent on a mission across normandy in the battle with the france allies.\nThese Two men was sent to save 1,600 men as they was lead into a trap by an army of Nazi soldiers\nwaiting for their arrival.")
+print("\n")
+print_slow("Is it TRUE or FALSE?")
+print("")
+answewr = input("\nA. True or B. False: ")
+print("")
+if answer == "a":
+    lose_karma()
+    print_slow("You are becoming an FAILURE!")
+    print("\n")
+    print_slow("This was true, the Two young men travelled across the border line to evacute and save 1,600 men from\nsure execution. \n")
+elif answer == "b":
+    gain_karma()
+    print_slow("This was true, the Two young men travelled across the border line to evacute and save 1,600 men from\nsure execution. \n")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+
+#Q6
+print_slow("\nIn World War I at DUNKIRK. Hitlers order was to stop the tanks just 18 miles away. \n")
+
+print_slow("\nA. To celebrate a victory in battle for a fellow comrad, this was done by a parade in the streets. \nB. To give British & French men, over 400,000 on the beach a chance to escape and for britain \nto surronder. \n")
+
+answer = input("\nA. A Comrads Victory or B. Britian to escape and surronder: ")
+print("")
+if answer == "a":
+    gain_karma()
+    print_slow("Hitler did celebrate a Comrads victory, although this can fall under both as British and the French\nsaw this as a chance to escape. They escaped too during the celebration thanks to british civilian\nships and some naval army ships.")
+    print("\n")
+elif answer == "b":
+    lose_karma()
+    print_slow("Come onnn, you can score a point surely :)")
+    print("")
+    print_slow("Hitler did celebrate a Comrads victory, although this can fall under both as British and the French\nsaw this as a chance to escape. They escaped too during the celebration thanks to british civilian\nships and some naval army ships.")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+
+#Q7
+print_slow("When the Lightbulb was first invented and Light was discovered. Who was the first to claim. Instead\nof using alternate current to look in the future for electricity?")
+print("\n")
+answer = input("A Thomas Edison or B. Tesla: ")
+if answer == "a":
+    gain_karma()
+    print("")
+    print_slow("It was A, Thomas Edison, they both had one half of what the others needed, Thomas had the bulb.\nWhile Tesla had the Structure and voltage of electricity. They was also an Third-Party who was also\npart of Edisons viral enemy. They are called WESTHOUSE.")
+    print("\n")
+elif answer == "b":
+    lose_karma()
+    print("")
+    print_slow("WRONG!")
+    print("\n")
+    print_slow("It was A, Thomas Edison, they both had one half of what the others needed, Thomas had the bulb.\nWhile Tesla had the Structure and voltage of electricity. They was also an Third-Party who was also\npart of Edisons viral enemy. They are called WESTHOUSE.")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+
+#Q8
+print_slow("NASA, they had a 30 year space programme. Which we seen come to end, during the beginning of the\nspace programme it is believed they sent up animals such as Monkeys and Dogs to test human space\nflight simulation for survival.\n\nWhich was the first animal to travel to space with a statue named after them?")
+print("\n")
+answer = input("A. Monkey or B. Dog: ")
+if answer == "a":
+    lose_karma()
+    print("")
+    print_slow("Nahh mate, it was the Doggo that went first, which is sly to be honest.")
+    print("")
+    print_slow("It was believed the dog was first into space and second was the monkey who infact did safely return\nhome. Thanks to these animals we're now able to take more opportunity in exploring space exploration.")
+elif answer == "b":
+    gain_karma()
+    print("")
+    print_slow("It was believed the dog was first into space and second was the monkey who infact did safely return\nhome. Thanks to these animals we're now able to take more opportunity in exploring space exploration.")
+    print("\n")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+print("")
+
+#Q9
+print_slow("In 1969, America sent a team of men (Apollo 13) to the moon and the first man on the moon stepped on the moon with which foot?")
+print("\n")
+answer = input("A. Right Foot or B. Left Foot: ")
+if answer == "a":
+    lose_karma()
+    print("")
+    print_slow("You was so close! Maybe it's just opposite day for you.\n")
+    print("")
+    print_slow("It was Neil Armstrong. He stepped on the moon with his left foot. This was a great achievement for\nAmerica and the space race. The space race would of defined who is the worlds best and was a stature to be proud of in these times.")
+elif answer == "b":
+    gain_karma()
+    print("")
+    print_slow("It was Neil Armstrong. He stepped on the moon with his left foot. This was a great achievement for\nAmerica and the space race. The space race would of defined who is the worlds best and was a stature to be proud of in these times.")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+print("\n")
+
+#Q10
+print_slow("The Beatles have did tours all around Europe, they're known on a global scale as one the best rock\nbands. They stopped touring for a couple years in the 60's. When in the 60's did they take a break.\n")
+print("\n")
+answer = input("A. 1968 - 1971 or B. 1966 - 1969: ")
+if answer == "a":
+    gain_karma()
+    print("")
+    print_slow("It was A, leading into the late 60's and the beginning of the 70's is when they made a return after\nnot being on stage for almost 4 long years. \n")
+elif answer == "b":
+    lose_karma()
+    print("")
+    print_slow("Stop thinking of the rolling stones you, this is The Beatles.")
+    print("\n")
+    print_slow("It was A, leading into the late 60's and the beginning of the 70's is when they made a return after\nnot being on stage for almost 4 long years. \n")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+
+#Q11
+print_slow("America don't believe their first Preident was a former Britsh man, his name was George Washington?")
+print("\n")
+answer = input("A. Yes They Believe or B. They Don't Believe: ")
+if answer == "a":
+    lose_karma()
+    print("\n")
+    print_slow("It was B, they don't believe it, they have some believers but most american's are aware of\nGeorge Washington. They are not aware he was British, it was like the living lie America deny.")
+elif answer == "b":
+    gain_karma()
+    print("")
+    print_slow("It was B, they don't believe it, they have some believers but most american's are aware of\nGeorge Washington. They are not aware he was British, it was like the living lie America deny.")
+    print("\n")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+print("")
+
+#Q12
+print_slow("During The Cold War when Russia was overtook by the Soviet Union, Stalingrad.\nThe Soviet Leader & Commanding Officer, dug his head in the sand when Britain and America tried to\nwarn him about Germany coming from the West.")
+print("\n")
+
+answer = input("A. He listened to the West or B. He did not listen to the West: ")
+if answer == "a":
+    lose_karma()
+    print("")
+    print_slow("Unlucky.")
+    print("")
+    print_slow("He did not listen, which led to a quick Capture in Moscow, but as the cold war kicked of and snow\npoured down. The Soviet Union was equipped for this weather compared to the German troops who\nliterally froze to death if not shot by the communist Soviet Union.")
+elif answer == "b":
+    gain_karma()
+    print("")
+    print_slow("He did not listen, which led to a quick Capture in Moscow, but as the cold war kicked of and snow\npoured down. The Soviet Union was equipped for this weather compared to the German troops who\nliterally froze to death if not shot by the communist Soviet Union.")
+    print("\n")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+print("")
+
+#Q13
+print_slow("During the days of The Black Plague, what was the cause of this global illness and how many deaths\nwas undertaken in these horrific times?")
+print("\n")
+answer = input("A. Virus killing Under 15 million or B. Bacterium killing over 20 million: ")
+if answer == "a":
+    lose_karma()
+    print("")
+    print_slow("It was a few more unfortunately.")
+    print("\n")
+    print_slow("It took over 25 million lives, this was also known as The Black Death. This plague originated in\nChina 1334. This disease spread through Europe killing upto an estimate of 25 million world wide.")
+elif answer == "b":
+    gain_karma()
+    print("")
+    print_slow("It took over 25 million lives, this was also known as The Black Death. This plague originated in\nChina 1334. This disease spread through Europe killing upto an estimate of 25 million world wide.")
+else:
+    print_slow("Please only use a or b...")
+print("")
+print("\n")
+
+#Q14
+print_slow("Which Serial Killer in 1978 confessed to over 30 kills of victims and escaped from prsion twice.\nThis was done during they're Four year spree as an Seriel Killer.")
+print("\n")
+answer = input("A. Ted Bundy or B. The Yorkshire Ripper: ")
+if answer == "a":
+    gain_karma()
+    print("")
+    print_slow("It was A, Ted Bundy went on his kill spree from 1974 upto 1978 when he was captured, during his time in prison he managed to escape twice and indeed confess and point the police in right direction\nof the body's.")
+elif answer == "b":
+    lose_karma()
+    print("")
+    print_slow("You chose wrong!\n\nIt was A, Ted Bundy went on his kill spree from 1974 upto 1978 when he was captured, during his time in prison he managed to escape twice and indeed confess and point the police in right direction\nof the body's.")
+    print("")
+else:
+    print_slow("Please only use a or b...")
+print("\n")
+print("")
+#Q15
+print_slow("How many Planets are in our Solar System, becareful with this. It is inclueding Pluto?\n")
+print_slow("\n")
+answer = input("A. 9 or B. 8: ")
+if answer == "a":
+    gain_karma()
+    print("")
+    print_slow("It is A, they was a scientist, Neil DeGrise Tyson. This scientist kicked Pluto out our solar system\nwith the words, 'Pluto is not a planet'. This planet was soonly brought back into the solar system\nafter some new dscioveries. ")
+elif answer == "b":
+    lose_karma()
+    print("")
+    print_slow("It is A, they was a scientist, Neil DeGrise Tyson. This scientist kicked Pluto out our solar system\nwith the words, 'Pluto is not a planet'. This planet was soonly brought back into the solar system\nafter some new dscioveries.")
+    print("")
+else:
+    print("Please only use a or b...")
+print("\n")
+print("")
+
+#Q16
+print_slow("Coca-Cola, we all love it. Sometimes we can't get enough of it. When was COCA-COLA first invented\nand brought out to the public to buy?")
+print("\n")
+answer = input("A. 1883 or B. 1886: ")
+if answer == "a":
+    lose_karma()
+    print("")
+    print_slow("Unlucky. It was B, in 1886, On May 8th, Dr. John Pemberton sold the first glass of Coca-Cola at\nJacobs' Pharmacy in downtown Atlanta.")
+elif answer == "b":
+    gain_karma()
+    print("")
+    print_slow("It was B, in 1886, on May 8th, Dr. John Pemberton sold the first glass of Coca-Cola at Jacobs'\nPharmacy in downtown Atlanta.")
+else:
+    print("Please only use a or b...")
+print("\n")
+print("\n")
+
+#EndGame
+print_slow("We will collect you data and decide if your life is worth something.\n")
+print_slow("Or if your life is Worthless.\n\nThanks for playing, Here we go...")
+
+#Endgame Score
+def final_karma():
+    global karma
+    if karma >= 10:
+        print_slow(" You're a Winner! Don't forget your Chicken Dinner!\n")
+    elif karma <= 10 and karma >= 0:
+        print_slow(" Unlucky mate, better try next time eh?\n")
+    else:
+        print_slow(" Absolutely shocking, we thought better and higher expectations from you!\n")
+        
+final_karma()
+endgame()
